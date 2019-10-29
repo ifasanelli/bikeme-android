@@ -15,7 +15,8 @@
         android:id="@+id/login_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Senha"/>
+        android:hint="Senha"
+        android:inputType="textPassword"/>
 
     <Button
         android:id="@+id/login_button"

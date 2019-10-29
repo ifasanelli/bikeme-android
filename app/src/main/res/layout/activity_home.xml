@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Home">
+
+    <Button
+        android:id="@+id/btnFit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="109dp"
+        android:text="Fitness"
+        app:layout_constraintStart_toStartOf="@+id/btnBikePark"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBikePark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Bicicletários"
+        android:onClick="telaPark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFit" />
+
+    <Button
+        android:id="@+id/btnBikeShop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bicicletarias"
+        android:onClick="telaShop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnBikePark"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRoubo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/red"
+        android:text="Roubo"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/btnBikeShop"
+        app:layout_constraintTop_toBottomOf="@+id/btnBikeShop" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,8 +1,12 @@
 package com.example.bikeme
 
+import android.app.Activity
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.login.*
@@ -30,17 +34,24 @@ class MainActivity : AppCompatActivity() {
 
         save.setOnClickListener(){
             handler.insertUserData(name.text.toString(),email.text.toString(),password_registration.text.toString())
-            showHome()
+            areaUser()
         }
 
         login_button.setOnClickListener{
             if(handler.userPresent(login_email.text.toString(), login_password.text.toString())){
                 Toast.makeText(this,"Logado com sucesso!",Toast.LENGTH_SHORT).show()
+                areaUser()
             }else{
                 Toast.makeText(this,"Usuário ou senha inválidos",Toast.LENGTH_SHORT).show()
+                showLogin()
             }
 
         }
+    }
+
+    private fun areaUser() {
+        val it = Intent(this, Home::class.java)
+        startActivity(it)
     }
 
     private fun showRegistration(){
