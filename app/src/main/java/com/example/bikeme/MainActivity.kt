@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
 
         save.setOnClickListener(){
             handler.insertUserData(name.text.toString(),email.text.toString(),password_registration.text.toString())
+            Toast.makeText(this,"Usuário criado com sucesso!",Toast.LENGTH_SHORT).show()
             areaUser()
         }
 

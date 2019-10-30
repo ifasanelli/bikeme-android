@@ -21,7 +21,7 @@ class Home : AppCompatActivity() {
     }
 
     fun telaPark(v: View){
-        val it = Intent(this, MainActivity::class.java)
+        val it = Intent(this, Park::class.java)
         startActivity(it)
     }
 }

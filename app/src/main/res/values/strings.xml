@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">BikeMe</string>
     <string name="title_activity_shop">Map</string>
+    <string name="title_activity_park">Map</string>
 </resources>
