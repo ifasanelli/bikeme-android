@@ -4,6 +4,7 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -33,4 +34,12 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.okhttp:okhttp:20120626'
+    implementation "org.jetbrains.anko:anko-sdk15:0.8.2"
+    implementation 'com.beust:klaxon:0.30'
+    implementation 'com.google.maps.android:android-maps-utils:0.4+'
+}
+
+repositories {
+    jcenter()
 }

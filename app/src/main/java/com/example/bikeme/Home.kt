@@ -16,12 +16,12 @@ class Home : AppCompatActivity() {
     }
 
     fun telaShop(v: View){
-        val it = Intent(this, BikeShop::class.java)
+        val it = Intent(this, Shop::class.java)
         startActivity(it)
     }
 
     fun telaPark(v: View){
-        val it = Intent(this, BikePark::class.java)
+        val it = Intent(this, MainActivity::class.java)
         startActivity(it)
     }
 }
