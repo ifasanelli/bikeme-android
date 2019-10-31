@@ -108,7 +108,7 @@ class Park : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerClickLis
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
 
-        btnVoltar.setOnClickListener {
+        btnEnviar.setOnClickListener {
             finish()
         }
     }

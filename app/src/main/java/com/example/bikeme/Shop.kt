@@ -2,10 +2,8 @@ package com.example.bikeme
 
 
 import android.graphics.Color
-import android.location.Location
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -14,11 +12,6 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.gms.maps.model.PolylineOptions
-import com.google.android.gms.maps.model.Polyline
-import androidx.core.app.ComponentActivity
-import androidx.core.app.ComponentActivity.ExtraData
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import kotlinx.android.synthetic.main.activity_shop.*
 
 
@@ -89,7 +82,7 @@ class Shop : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerClickLis
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
 
-        btnVoltar.setOnClickListener {
+        btnEnviar.setOnClickListener {
             finish()
         }
     }

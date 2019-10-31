@@ -24,4 +24,13 @@ class Home : AppCompatActivity() {
         val it = Intent(this, Park::class.java)
         startActivity(it)
     }
+
+    fun telaRoubo(v:View){
+        val it = Intent(this, Roubo::class.java)
+        startActivity(it)
+    }
+
+    fun sair(v:View){
+        finishAffinity()
+    }
 }
