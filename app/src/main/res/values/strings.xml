@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">BikeMe</string>
-    <string name="title_activity_shop">Map</string>
-    <string name="title_activity_park">Map</string>
+    <string name="title_activity_shop">Bicicletarias</string>
+    <string name="title_activity_park">Bicicletários</string>
+    <string name="title_activity_fitness">Fitness</string>
+    <string name="stop">Parar</string>
+    <string name="start">Começar</string>
+    <string name="playing">Vai!!!</string>
+    <string name="stopped">Parado...</string>
+
 </resources>

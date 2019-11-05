@@ -33,4 +33,9 @@ class Home : AppCompatActivity() {
     fun sair(v:View){
         finishAffinity()
     }
+
+    fun telaFitness(v:View){
+        val it = Intent(this, Fitness::class.java)
+        startActivity(it)
+    }
 }
