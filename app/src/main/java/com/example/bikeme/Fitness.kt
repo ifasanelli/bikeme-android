@@ -1,5 +1,6 @@
 package com.example.bikeme
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.SystemClock
@@ -74,6 +75,16 @@ class Fitness : AppCompatActivity(), OnMapReadyCallback {
             }
         })
 
+        val button3 = findViewById<Button>(R.id.btnComp)
+        button3?.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(v: View) {
+                chronometer.setBase(SystemClock.elapsedRealtime())
+                pauseOffset = 0
+                isPlaying = false
+                val it = Intent(this@Fitness, Compartilhar::class.java)
+                startActivity(it)
+            }
+        })
 
     }
 

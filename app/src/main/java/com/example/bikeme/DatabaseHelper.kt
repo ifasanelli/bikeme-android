@@ -17,6 +17,8 @@ class DatabaseHelper (context: Context):SQLiteOpenHelper(context,dbname,factory,
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
+
+
     fun insertUserData(name:String, email:String, password:String){
         val db: SQLiteDatabase = writableDatabase
         val values = ContentValues()
