@@ -15,16 +15,16 @@
         android:layout_marginEnd="67dp"
         android:layout_marginBottom="34dp"
         android:gravity="center"
-        android:text="Nós da equide BikeMe sentimos muito pelo ocorrido, mas gostaríamos de agradecer pelos dados fornecidos. Eles ajudarão a tornar sua cidade mais segura.                   Obrigado,          Equipe BikeMe."
+        android:text="Nós da equipe BikeMe sentimos muito pelo ocorrido, mas gostaríamos de agradecer pelos dados fornecidos. Eles ajudarão a tornar sua cidade mais segura.                   Obrigado,          Equipe BikeMe."
         android:textColor="#000000"
         android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnVoltar"
+        app:layout_constraintBottom_toTopOf="@+id/btnVlt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/btnVoltar"
+        android:id="@+id/btnVlt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="88dp"

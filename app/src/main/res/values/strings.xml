@@ -7,5 +7,6 @@
     <string name="start">Começar</string>
     <string name="playing">Vai!!!</string>
     <string name="stopped">Parado...</string>
+    <string name="title_activity_rota">Map</string>
 
 </resources>

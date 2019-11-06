@@ -38,4 +38,9 @@ class Home : AppCompatActivity() {
         val it = Intent(this, Fitness::class.java)
         startActivity(it)
     }
+
+    fun telaRota(v:View){
+        val it = Intent(this, Rota::class.java)
+        startActivity(it)
+    }
 }

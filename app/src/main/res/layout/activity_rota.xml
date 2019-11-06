@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/safefast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".Rota" />
+
+    <Button
+        android:id="@+id/btnVlt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:text="Voltar"
+        android:onClick="vltHome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRota" />
+
+    <EditText
+        android:id="@+id/txtLocal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="14dp"
+        android:ems="10"
+        android:hint="Local"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRota"
+        app:layout_constraintEnd_toStartOf="@+id/btnRota"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnRota" />
+
+    <Button
+        android:id="@+id/btnRota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="73dp"
+        android:enabled="false"
+        android:text="Rota"
+        app:layout_constraintBottom_toTopOf="@+id/btnVlt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtLocal"
+        app:layout_constraintTop_toBottomOf="@+id/safefast" />
+
+    <Switch
+        android:id="@+id/safefast"
+        android:layout_width="99dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="25dp"
+        android:text="Rápida"
+        app:layout_constraintBottom_toTopOf="@+id/btnRota"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="231dp"
+        android:text="Segura"
+        android:textColor="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="@+id/safefast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/safefast" />
+</androidx.constraintlayout.widget.ConstraintLayout>

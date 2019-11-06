@@ -8,15 +8,24 @@
     tools:context=".Home">
 
     <Button
+        android:id="@+id/btnBikeShop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:onClick="telaShop"
+        android:text="Bicicletarias"
+        app:layout_constraintStart_toStartOf="@+id/btnBikePark"
+        app:layout_constraintTop_toBottomOf="@+id/btnBikePark" />
+
+    <Button
         android:id="@+id/btnFit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="109dp"
-        android:layout_marginEnd="17dp"
+        android:layout_marginTop="56dp"
         android:onClick="telaFitness"
         android:text="Fitness"
-        app:layout_constraintEnd_toEndOf="@+id/btnBikePark"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/btnRota"
+        app:layout_constraintTop_toBottomOf="@+id/btnRota" />
 
     <Button
         android:id="@+id/btnBikePark"
@@ -30,26 +39,16 @@
         app:layout_constraintTop_toBottomOf="@+id/btnFit" />
 
     <Button
-        android:id="@+id/btnBikeShop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="61dp"
-        android:onClick="telaShop"
-        android:text="Bicicletarias"
-        app:layout_constraintStart_toStartOf="@+id/btnBikePark"
-        app:layout_constraintTop_toBottomOf="@+id/btnBikePark" />
-
-    <Button
         android:id="@+id/btnRoubo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
         android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="@color/red"
         android:onClick="telaRoubo"
         android:text="Roubo"
         android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="@+id/btnBikeShop"
+        app:layout_constraintEnd_toEndOf="@+id/btnBikeShop"
         app:layout_constraintTop_toBottomOf="@+id/btnBikeShop" />
 
     <Button
@@ -62,4 +61,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:text="Rotas"
+        android:onClick="telaRota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

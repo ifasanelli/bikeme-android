@@ -11,7 +11,7 @@ class Informe : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_informe)
 
-        btnVoltar.setOnClickListener{
+        btnVlt.setOnClickListener{
             val it = Intent(this, Home::class.java)
             startActivity(it)
         }

@@ -8,7 +8,7 @@
     tools:context=".Compartilhar">
 
     <Button
-        android:id="@+id/btnVoltar"
+        android:id="@+id/btnVlt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="46dp"

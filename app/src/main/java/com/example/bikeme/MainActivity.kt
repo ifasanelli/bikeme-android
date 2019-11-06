@@ -48,6 +48,14 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+
+        btnV1.setOnClickListener{
+            showHome()
+        }
+
+        btnV2.setOnClickListener {
+            showHome()
+        }
     }
 
     private fun areaUser() {
