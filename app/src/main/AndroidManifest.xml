@@ -33,7 +33,7 @@
 
         <activity
             android:name=".Rota"
-            android:label="@string/title_activity_rota"></activity>
+            android:label="Rotas"></activity>
         <activity android:name=".Compartilhar" />
         <activity
             android:name=".Fitness"
